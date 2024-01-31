@@ -32,13 +32,13 @@ fun main() {
 
     val amount = 99
     when (amount) {
-        in 1..100 -> println("This amount is between 1 and 100")
-        !in 10..90 -> println("This amount is outside the range")
-        999 -> println("Really close")
-        1000 -> println("Rich but not there")
+        in 1..100 -> println("This amount is between 1 and 100.")
+        !in 10..90 -> println("This amount is outside the range.")
+        999 -> println("Really close.")
+        1000 -> println("Rich but not there.")
         1100 -> println("You've made it!")
         else -> {
-            println("$amount is just not going to work")
+            println("$amount is just not going to work.")
         }
     }
 //    if (amount >= 1000) {
@@ -49,7 +49,7 @@ fun main() {
 
     for (i in 1..30) {
         if (i % 3 == 0)
-            println("$i is multiple of 3") else println("---")
+            println("$i is multiple of 3.") else println("---")
         if (i % 2 == 0) println(i)
     }
 }
