@@ -52,4 +52,20 @@ fun main() {
             println("$i is multiple of 3.") else println("---")
         if (i % 2 == 0) println(i)
     }
+
+    //calculate(1, 1000, message = "is multiple of", 3)
+    calculate(first = 20, second = 100, message = "is multiple of", multipleOf = 11)
+
+    val catAge = calculateCatAge(age = 12)
+    print("This cat is $catAge years old")
 }
+
+fun calculate(first: Int = 1, second: Int = 1000, message: String, multipleOf: Int) {
+    for (i in first..second) {
+        if (i % multipleOf == 0) {
+            println("$i $message $multipleOf")
+        }
+    }
+}
+
+fun calculateCatAge(age: Int): Int = age * 7
